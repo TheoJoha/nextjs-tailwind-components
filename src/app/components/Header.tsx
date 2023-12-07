@@ -1,4 +1,5 @@
 import Link from "next/Link"
+import LightDarkToggle from "./toggle/LightDarkToggle"
 
 const Header = () => {
   return (
@@ -22,8 +23,8 @@ const Header = () => {
                     Subscribe
                 </button>    
             </form>
-            <nav>
-                {/* add menu */}
+            <nav className="flex flex-row items-center gap-4">
+                <LightDarkToggle />
                 <button>Sign in</button>
             </nav>
         </div>
